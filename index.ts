@@ -1,5 +1,14 @@
-import { methods, defaultABI, defaultContractAddress } from "./src/ABI";
-import { IEthersError, IExtendedConfig } from "./src/types";
+import { methods } from "./src/ABI";
+import type { IEthersError, IExtendedConfig } from "./src/types";
 
-export { methods, defaultABI, defaultContractAddress };
-export type { IEthersError, IExtendedConfig };
+const { getTimestamp, encryptMessage, decryptMessage, isActive, whenActive } = methods;
+export {
+  methods as default,
+  getTimestamp,
+  encryptMessage,
+  decryptMessage,
+  isActive,
+  whenActive,
+  type IEthersError,
+  type IExtendedConfig,
+};

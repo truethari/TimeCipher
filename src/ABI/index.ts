@@ -65,22 +65,3 @@ export const methods = {
     return Number(timestamp);
   },
 };
-
-// async function main() {
-//   const currentTime = await methods.getTimestamp();
-//   console.log("Current time:", currentTime);
-//
-//   const encryptedMsg = await methods.encryptMessage("Hello, world!", currentTime);
-//   console.log("Encrypted message:", encryptedMsg);
-//
-//   const isActive = await methods.isActive(encryptedMsg);
-//   console.log("Is active:", isActive);
-//
-//   const whenActive = await methods.whenActive(encryptedMsg);
-//   console.log("When active:", whenActive);
-//
-//   const decryptedMsg = await methods.decryptMessage(encryptedMsg);
-//   console.log("Decrypted message:", decryptedMsg);
-// }
-//
-// main().then(() => process.exit(0));
