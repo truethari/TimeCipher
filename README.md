@@ -18,6 +18,7 @@ Install the library using npm or yarn or bun:
 ```bash
 npm install timecipher
 ```
+
 or
 
 ```bash
@@ -42,13 +43,7 @@ bun install timecipher
 First, import the necessary methods from the library:
 
 ```javascript
-import {
-  getTimestamp,
-  encryptMessage,
-  decryptMessage,
-  isActive,
-  whenActive,
-} from "time-cipher";
+import { getTimestamp, encryptMessage, decryptMessage, isActive, whenActive } from "time-cipher";
 ```
 
 Example: Encrypting a message
@@ -162,4 +157,7 @@ interface IExtendedConfig {
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+
 ```
