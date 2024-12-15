@@ -1,7 +1,7 @@
 {
   "name": "timecipher",
   "discription": "TimeCipher is a blockchain-based time-locked messaging system that securely encrypts messages with a timestamp, ensuring they can only be decrypted after the specified time. This innovative solution combines privacy and delayed access, perfect for secure future communication.",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "keywords": [
     "timecipher",
     "blockchain",
