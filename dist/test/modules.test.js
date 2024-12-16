@@ -19,6 +19,7 @@ test("getTimestamp", () => __awaiter(void 0, void 0, void 0, function* () {
 }));
 test("encryptMessage", () => __awaiter(void 0, void 0, void 0, function* () {
     const timestamp = yield index_1.default.getTimestamp();
+    yield new Promise((resolve) => setTimeout(resolve, 1000));
     const encryptedMessage = yield index_1.default.encryptMessage("test", timestamp);
     expect(typeof encryptedMessage).toBe("string");
 }));

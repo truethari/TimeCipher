@@ -7,6 +7,7 @@ test("getTimestamp", async () => {
 
 test("encryptMessage", async () => {
   const timestamp = await timeciper.getTimestamp();
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   const encryptedMessage = await timeciper.encryptMessage("test", timestamp);
   expect(typeof encryptedMessage).toBe("string");
 });
