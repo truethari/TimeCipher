@@ -43,7 +43,7 @@ bun install timecipher
 First, import the necessary methods from the library:
 
 ```javascript
-import { getTimestamp, encryptMessage, decryptMessage, isActive, whenActive } from "time-cipher";
+import { getTimestamp, encryptMessage, decryptMessage, isActive, whenActive } from "timecipher";
 ```
 
 Example: Encrypting a message
@@ -85,20 +85,6 @@ console.log("Current Timestamp:", timestamp);
 ```
 
 ## API Documentation
-
-`getTimestamp(_config?: IExtendedConfig): Promise<number>`
-
-Retrieves the current timestamp from the smart contract.
-
-**Parameters:**
-
-- `_config` (optional): An object to override default configuration.
-
-**Returns:**
-
-- A promise that resolves to the current timestamp as a number.
-
----
 
 `decryptMessage(encryptedMessage: string, _config?: IExtendedConfig): Promise<string>`
 
@@ -143,6 +129,20 @@ Gets the activation timestamp of an encrypted message.
 
 - A promise that resolves to the activation timestamp as a number.
 
+---
+
+`getTimestamp(_config?: IExtendedConfig): Promise<number>`
+
+Retrieves the current timestamp from the smart contract.
+
+**Parameters:**
+
+- `_config` (optional): An object to override default configuration.
+
+**Returns:**
+
+- A promise that resolves to the current timestamp as a number.
+
 ## Types
 
 ```typescript
@@ -157,7 +157,3 @@ interface IExtendedConfig {
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
-```

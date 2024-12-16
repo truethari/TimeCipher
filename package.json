@@ -1,7 +1,7 @@
 {
   "name": "timecipher",
   "discription": "TimeCipher is a blockchain-based time-locked messaging system that securely encrypts messages with a timestamp, ensuring they can only be decrypted after the specified time. This innovative solution combines privacy and delayed access, perfect for secure future communication.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "timecipher",
     "blockchain",
@@ -17,6 +17,18 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "require": "./dist/index.d.ts",
+        "default": "./dist/index.d.ts"
+      },
+      "default": {
+        "require": "./dist/index.js",
+        "import": "./dist/index.js"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/truethari/timecipher.git"

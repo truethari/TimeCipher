@@ -4,7 +4,4 @@
 /coverage.data
 /coverage/
 
-# Build files
-/dist
-
 /.idea
