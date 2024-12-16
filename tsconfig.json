@@ -9,6 +9,8 @@
     "outDir": "./dist",
     "moduleDetection": "force",
     "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
 
     // Best practices
     "skipLibCheck": true,
